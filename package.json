@@ -1,7 +1,7 @@
 {
-  "name": "generator-angular",
+  "name": "generator-angular-wp-shortcode",
   "version": "0.8.0",
-  "description": "Yeoman generator for AngularJS",
+  "description": "Yeoman generator for a AngularJS WP Plugin Shortcode",
   "keywords": [
     "yeoman-generator",
     "scaffold",
@@ -11,9 +11,9 @@
     "app",
     "angular"
   ],
-  "author": "The Yeoman Team",
+  "author": "Will Haley",
   "main": "app/index.js",
-  "repository": "yeoman/generator-angular",
+  "repository": "willhaley/generator-angular",
   "scripts": {
     "test": "mocha"
   },

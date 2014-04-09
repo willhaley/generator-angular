@@ -120,6 +120,7 @@ Generator.prototype.welcome = function welcome() {
   }
 };
 
+/*
 Generator.prototype.askForCompass = function askForCompass() {
   var cb = this.async();
 
@@ -139,11 +140,12 @@ Generator.prototype.askForBootstrap = function askForBootstrap() {
   var compass = this.compass;
   var cb = this.async();
 
-  this.prompt([{
+  this.prompt([
+  {
     type: 'confirm',
     name: 'bootstrap',
     message: 'Would you like to include Bootstrap?',
-    default: true
+    default: false
   }, {
     type: 'confirm',
     name: 'compassBootstrap',
@@ -159,6 +161,7 @@ Generator.prototype.askForBootstrap = function askForBootstrap() {
     cb();
   }.bind(this));
 };
+*/
 
 Generator.prototype.askForModules = function askForModules() {
   var cb = this.async();
@@ -257,6 +260,7 @@ Generator.prototype.packageFiles = function () {
   this.template('../../templates/common/_bower.json', 'bower.json');
   this.template('../../templates/common/_package.json', 'package.json');
   this.template('../../templates/common/Gruntfile.js', 'Gruntfile.js');
+  this.template('../../templates/wordpress/wordpress.php', 'app/.' + this.scriptAppName + '.php');
 };
 
 Generator.prototype.imageFiles = function () {
